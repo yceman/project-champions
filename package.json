@@ -1,0 +1,45 @@
+{
+  "name": "project-champions",
+  "version": "1.0.0",
+  "description": "API Champions",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "dist": "tsup src",
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start:watch": "tsx watch --env-file=.env  src/server.ts",
+    "start:dist": "npm run dist && node dist/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yceman/project-champions.git"
+  },
+  "keywords": [
+    "API",
+    "Minimal",
+    "Typescript",
+    "Express",
+    "Fastify",
+    "Zod"
+  ],
+  "author": "Marcos Morais",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/yceman/project-champions/issues"
+  },
+  "homepage": "https://github.com/yceman/project-champions#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.10",
+    "@types/typescript": "^2.0.0",
+    "jest": "^30.0.4",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
